@@ -1,7 +1,7 @@
 Wechat-Sign
 ==========
 
-make it easier to get wechat access_token, jsapi_ticket and sign url
+Make it easier to get wechat access_token, jsapi_ticket and sign url
 
 ## Installation
 
