@@ -3,7 +3,7 @@ import reqp from 'request-promise'
 import NodeCache from 'node-cache'
 import wechatSign from './helpers/wechatSign'
 import replaceTpl from './helpers/replaceTpl'
-import localConfig from '../config'
+import localConfig from '../config/wechat.json'
 
 export default class Wechat {
   constructor(config = {}) {

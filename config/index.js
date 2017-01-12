@@ -1,4 +1,0 @@
-export default {
-  tokenApiTemplate: 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=#{appid}&secret=#{secret}',
-  ticketApiTemplate: 'https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=#{access_token}&type=jsapi',
-}
