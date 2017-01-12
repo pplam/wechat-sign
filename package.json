@@ -1,6 +1,6 @@
 {
   "name": "node-wechat-sign",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "make it easier to get wechat access_token, jsapi_ticket and sign url",
   "main": "index.js",
   "scripts": {
