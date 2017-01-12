@@ -17,8 +17,8 @@ const raw = (args) => {
   })
 
   let string = ''
-  for (const key of newArgs) {
-    string += `&${key}=${newArgs[key]}`
+  for (const key in newArgs) {
+    if (newArgs.hasOwnProperty(key)) string += `&${key}=${newArgs[key]}`
   }
   string = string.substr(1)
   return string
