@@ -32,7 +32,7 @@ export default class Wechat {
       this.cache.set('accessToken', access_token, tokenExpiresInSeconds)
     }
     const expires_in_ms = this.cache.getTtl('accessToken') - new Date()
-    const expires_in = expires_in_msi / 1000
+    const expires_in = expires_in_ms / 1000
     const token = { access_token, expires_in }
     return token
   }
