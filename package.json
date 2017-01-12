@@ -1,0 +1,56 @@
+{
+  "name": "node-wechat-sign",
+  "version": "1.0.0",
+  "description": "make it easier to get wechat access_token, jsapi_ticket and sign url",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "[ -d src ] && ./node_modules/.bin/babel src --out-dir lib || true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "aa"
+  },
+  "keywords": [
+    "wechat",
+    "jssdk",
+    "sign",
+    "access_token",
+    "jsapi_ticket",
+    "token",
+    "ticket",
+    "signature",
+    "weixin"
+  ],
+  "author": "Shiwen Luo <shiwen.l.ating@gmail.com> (https://github.com/pplam)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pplam/wechat-sign/issues"
+  },
+  "homepage": "https://github.com/pplam/wechat-sign#readme",
+  "dependencies": {
+    "jssha": "^1.6.0",
+    "node-cache": "^4.1.1",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}
