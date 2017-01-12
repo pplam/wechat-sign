@@ -11,10 +11,21 @@ Make it easier to get wechat access_token, jsapi_ticket and sign url
 
 ~~~javascript
   import Wechat from 'node-wechat-sign'
+
   const wechat = new Wechat(config)
+
   const access_token = await wechat.getAccessToken()
   const jsapi_ticket = await wechat.getTicket()
   const signature = await wechat.sign(url)
+~~~
+
+Here use memory to cache the access_token and jsapi_ticket.
+To refresh the cached access_token or jsapi_ticket, pass in a `refresh` parameter with `true` value:
+
+~~~javascript
+  const refresh = true
+  const access_token = await wechat.getAccessToken(refresh)
+  const jsapi_ticket = await wechat.getTicket(refresh)
 ~~~
 
 ## Configure
