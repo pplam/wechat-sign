@@ -41,33 +41,33 @@ To refresh the cached access_token or jsapi_ticket, pass in a `refresh` paramete
   }
 ~~~
 
-#### appid[STRING]
+#### appid [ STRING ]
 
   Your officer account's appid.
 
-#### secret[STRING]
+#### secret [ STRING ]
 
   Your officer account's secret.
 
-#### tokenApiTemplate[STRING]
+#### tokenApiTemplate [ STRING ]
 
   Url template of wechat server for access_token.
   Default value:
   `'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=#{appid}&secret=#{secret}'`
 
-#### ticketApiTemplate[STRING]
+#### ticketApiTemplate [ STRING ]
 
   Url template of wechat server for jsapi_ticket.
   Default value:
   `'https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=#{access_token}&type=jsapi'`
 
-#### templateVariablePattern[REGEXP]
+#### templateVariablePattern [ REGEXP ]
 
   Pattern to replace above templates with real data.
   Default value:
   `/#\{([^}]*)\}/mg`
 
-#### cacheExpiresInSeconds[NUMBER]
+#### cacheExpiresInSeconds [ NUMBER ]
 
   Seconds to expire the cached access_token and jsapi_ticket.
   Default value:
