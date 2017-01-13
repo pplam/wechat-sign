@@ -2,7 +2,7 @@
   "name": "node-wechat-sign",
   "version": "1.0.7",
   "description": "make it easier to get wechat access_token, jsapi_ticket and sign url",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "transpile": "[ -d src ] && ./node_modules/.bin/babel src --out-dir lib || true",
     "test": "echo \"Error: no test specified\" && exit 1"
