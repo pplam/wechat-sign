@@ -1,8 +1,8 @@
 import 'babel-polyfill'
 import reqp from 'request-promise'
 import NodeCache from 'node-cache'
-import wechatSign from './helpers/wechatSign'
-import replaceTpl from './helpers/replaceTpl'
+import wechatSign from './utils/wechatSign'
+import replaceTpl from './utils/replaceTpl'
 import localConfig from '../config/wechat.json'
 
 export default class Wechat {
