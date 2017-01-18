@@ -12,7 +12,7 @@ Make it easier to get wechat access_token, jsapi_ticket and sign url
 ~~~javascript
   import Wechat from 'node-wechat-sign'
 
-  const wechat = new Wechat(config)  // You should instantiate it out side of your method if you need to share the cache among methods
+  const wechat = new Wechat(config)  // You should instantiate it out of your method if you need to share the cache among methods
 
   const access_token = await wechat.getAccessToken()
   const jsapi_ticket = await wechat.getTicket()
